@@ -35,11 +35,76 @@ section.hero_carousel {
   width: 100vw !important;
   overflow: hidden;
 }
-section.hero_carousel .carousel .carousel-inner {
+section.hero_carousel .carousel {
+  position: relative;
   height: 100vh !important;
   width: 100vw !important;
+}
+section.hero_carousel .carousel:hover .carousel-control-prev,
+section.hero_carousel .carousel:hover .carousel-control-next {
+  opacity: 1 !important;
 }
 section.hero_carousel .carousel .carousel-inner .carousel-item {
   height: 100vh !important;
   width: 100vw !important;
+}
+section.hero_carousel .carousel .carousel-inner .carousel-item:nth-child(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.404)), url("../../Utils/Images/01.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.hero_carousel .carousel .carousel-inner .carousel-item:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.404)), url("../../Utils/Images/02.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.hero_carousel .carousel .carousel-inner .carousel-item:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.404)), url("../../Utils/Images/03.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.hero_carousel .carousel .carousel-inner .carousel-item .carousel_hero_text {
+  display: flex;
+  height: 100vh !important;
+  width: 100% !important;
+  z-index: 1;
+  align-items: center;
+}
+section.hero_carousel .carousel .carousel-inner .carousel-item .carousel_hero_text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 425px) {
+  section.hero_carousel .carousel .carousel-inner .carousel-item .carousel_hero_text h1 {
+    font-size: 2rem;
+  }
+}
+section.hero_carousel .carousel .carousel-control-prev {
+  position: absolute;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  opacity: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2%;
+  transition: 0.3s ease-in;
+  opacity: 0;
+}
+section.hero_carousel .carousel .carousel-control-next {
+  position: absolute;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  opacity: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2%;
+  opacity: 0;
+  transition: 0.3s ease-in;
 }/*# sourceMappingURL=Bootstrap_overwrite.css.map */

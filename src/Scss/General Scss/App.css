@@ -5,4 +5,14 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif !important;
+}
+
+.btn {
+  padding: 15px 30px !important;
+}
+.btn.btn-primary {
+  background-color: #FE6E6B !important;
+  border-color: #FE6E6B !important;
+  transition: 0.3s ease-in;
+  position: relative;
 }/*# sourceMappingURL=App.css.map */
