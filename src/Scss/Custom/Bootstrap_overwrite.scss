@@ -1,8 +1,19 @@
+// custome colors variables
+
+$primary-color: #FE6E6B;
+$default-color: #ffffff;
+$teal-bg-color: #23687D;
+$dark-color: #333333;
+
 // navbar
 
 nav {
     .container {
         .collapse {
+            .nav-link {
+                color: $dark-colorn;
+            }
+
             .mobile_nav_block_cd {
                 @media screen and (max-width: 375px) {
                     .d-flex {
@@ -32,6 +43,20 @@ nav {
                 height: 40px;
                 width: 40px;
                 border-radius: 50%;
+
+                .card_badge {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    top: -15%;
+                    height: 19px;
+                    right: -10%;
+                    border-radius: 50px;
+                    font-size: .8rem;
+                    color: $default-color;
+                    background-color: $primary-color;
+                    width: 19px;
+                }
             }
 
             .d-flex {
@@ -141,6 +166,16 @@ section.hero_carousel {
             right: 2%;
             opacity: 0;
             transition: .3s ease-in;
+        }
+    }
+}
+
+// min_shop
+
+section.min_shop  {
+    .container {
+        .d-gird {
+            grid-template-columns: 1fr 1fr !important;
         }
     }
 }

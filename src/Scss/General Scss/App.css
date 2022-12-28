@@ -8,11 +8,15 @@ body {
 }
 
 .btn {
-  padding: 15px 30px !important;
+  padding: 12px 30px !important;
 }
 .btn.btn-primary {
   background-color: #FE6E6B !important;
   border-color: #FE6E6B !important;
   transition: 0.3s ease-in;
   position: relative;
+}
+
+.form-control:focus {
+  border-color: #FE6E6B !important;
 }/*# sourceMappingURL=App.css.map */

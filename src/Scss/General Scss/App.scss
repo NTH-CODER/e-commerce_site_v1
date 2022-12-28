@@ -20,7 +20,7 @@ body {
 // button custome styling
 
 .btn {
-    padding: 15px 30px !important;
+    padding: 12px 30px !important;
 
     &.btn-primary {
         background-color: $primary-color !important;
@@ -28,4 +28,10 @@ body {
         transition: .3s ease-in;
         position: relative;
     }
+}
+
+// form control styling
+
+.form-control:focus {
+    border-color: $primary-color !important;
 }

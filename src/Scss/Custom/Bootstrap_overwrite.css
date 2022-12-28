@@ -1,3 +1,6 @@
+nav .container .collapse .nav-link {
+  color: #333333;
+}
 @media screen and (max-width: 375px) {
   nav .container .collapse .mobile_nav_block_cd .d-flex .profile_ico {
     height: 40px;
@@ -20,6 +23,19 @@ nav .container .collapse .cart_block {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+}
+nav .container .collapse .cart_block .card_badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -15%;
+  height: 19px;
+  right: -10%;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  color: #ffffff;
+  background-color: #FE6E6B;
+  width: 19px;
 }
 nav .container .collapse .d-flex .profile_ico {
   height: 40px;
