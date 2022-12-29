@@ -19,4 +19,8 @@ body {
 
 .form-control:focus {
   border-color: #FE6E6B !important;
+}
+
+.bg-danger {
+  background-color: #FE6E6B !important;
 }/*# sourceMappingURL=App.css.map */

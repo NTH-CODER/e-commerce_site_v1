@@ -35,3 +35,9 @@ body {
 .form-control:focus {
     border-color: $primary-color !important;
 }
+
+// backround custome style
+
+.bg-danger {
+    background-color: $primary-color !important;
+}

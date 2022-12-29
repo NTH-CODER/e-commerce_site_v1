@@ -11,7 +11,7 @@ nav {
     .container {
         .collapse {
             .nav-link {
-                color: $dark-colorn;
+                color: $dark-color;
             }
 
             .mobile_nav_block_cd {
@@ -174,8 +174,18 @@ section.hero_carousel {
 
 section.min_shop  {
     .container {
-        .d-gird {
-            grid-template-columns: 1fr 1fr !important;
+        .img_box {
+            // height: 339px !important;
+            overflow: hidden !important;
+        }
+
+        #shopRow {
+            height: 114vh !important;
+            overflow: hidden !important;
+
+            @media screen and (max-width: 768px) {
+                height: 100% !important;
+            }
         }
     }
 }
