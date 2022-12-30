@@ -180,12 +180,29 @@ section.min_shop  {
         }
 
         #shopRow {
-            height: 114vh !important;
             overflow: hidden !important;
 
             @media screen and (max-width: 768px) {
                 height: 100% !important;
             }
+
+            .categori_badge {
+                background-color: $primary-color !important;
+                opacity: 0;
+                transition: .3s ease-in;
+            }
+
+            .col-md-3:hover {
+                .categori_badge {
+                    opacity: 1;
+                }
+            }
         }
     }
+}
+
+section.vendor_box {
+    background: linear-gradient(rgba(0, 0, 0, 0.419), rgba(0, 0, 0, 0.419)), url('../../Utils/Images/milad-fakurian-E8Ufcyxz514-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
 }

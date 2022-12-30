@@ -4,13 +4,16 @@ const row = document.getElementById('shopRow');
 getShopItems();
 
 function getShopItems() {
-    fetch('https://fakestoreapi.com/products')
+    fetch('https://fakestoreapi.com/products?limit=8')
         .then(res=>res.json())
         .then(data => {
             console.log(data);
             showShopItems(data);
         })
 }
+
+// get shop items according to search
+
 
 function showShopItems(data) {
     row.innerHTML = '';

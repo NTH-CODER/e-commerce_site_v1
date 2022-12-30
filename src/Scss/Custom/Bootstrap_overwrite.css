@@ -129,11 +129,24 @@ section.min_shop .container .img_box {
   overflow: hidden !important;
 }
 section.min_shop .container #shopRow {
-  height: 114vh !important;
   overflow: hidden !important;
 }
 @media screen and (max-width: 768px) {
   section.min_shop .container #shopRow {
     height: 100% !important;
   }
+}
+section.min_shop .container #shopRow .categori_badge {
+  background-color: #FE6E6B !important;
+  opacity: 0;
+  transition: 0.3s ease-in;
+}
+section.min_shop .container #shopRow .col-md-3:hover .categori_badge {
+  opacity: 1;
+}
+
+section.vendor_box {
+  background: linear-gradient(rgba(0, 0, 0, 0.419), rgba(0, 0, 0, 0.419)), url("../../Utils/Images/milad-fakurian-E8Ufcyxz514-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
 }/*# sourceMappingURL=Bootstrap_overwrite.css.map */
